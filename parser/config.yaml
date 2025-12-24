@@ -1,0 +1,22 @@
+db:
+  host: "localhost"
+  port: 27017
+  name: "search_engine"
+  collection: "pages"
+
+logic:
+  concurrency: 5
+  delay: 0.5
+  recrawl_interval: 315360000
+  max_documents: 100000
+  use_sitemap: true
+  user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+
+sources:
+  - name: "RBC"
+    root_url: "https://www.rbc.ru"
+    allowed_domains: ["rbc.ru", "www.rbc.ru"]
+
+  - name: "DW"
+    root_url: "https://www.dw.com/ru/"
+    allowed_domains: ["dw.com", "www.dw.com"]

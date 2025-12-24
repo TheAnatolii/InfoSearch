@@ -1,0 +1,16 @@
+name: search_engine_lab
+version: '3.8'
+
+services:
+  mongo:
+    image: mongo:latest
+    container_name: crawler_mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+    restart: always
+
+
+volumes:
+  mongo_data:

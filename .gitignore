@@ -1,0 +1,63 @@
+
+# Build output
+/build/
+/bin/
+/lib/
+
+# CMake files and generated build artefacts
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+Makefile2
+compile_commands.json
+CTestTestfile.cmake
+Testing/
+
+# GoogleTest / deps built under build
+build/_deps/
+build/googletest-build/
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# macOS
+.DS_Store
+
+# Temporary and log files
+*.log
+*.tmp
+
+# Compiled objects, libraries and executables
+*.o
+*.obj
+*.so
+*.dylib
+*.a
+*.exe
+*.out
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+venv/
+.venv/
+env/
+
+# Notebook checkpoints
+.ipynb_checkpoints
+
+# Generated index and data files
+index.bin
+boolean_index.bin
+urls.bin
+zipf_stats.csv
+
+# Misc
+*.~
+
