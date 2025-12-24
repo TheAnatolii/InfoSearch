@@ -33,7 +33,6 @@ void MongoConnector::processAllDocuments(std::function<void(const RawDocument &)
 
         if (doc["url"] && doc["url"].type() == bsoncxx::type::k_string)
         {
-            // В новых версиях используется get_string()
             auto str_view = doc["url"].get_string().value;
             raw.url = std::string(str_view);
         }

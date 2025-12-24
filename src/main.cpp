@@ -155,7 +155,7 @@ int main(int argc, char *argv[])
     std::cout << "=== Initialization Complete ===\n"
               << std::endl;
 
-    // Режим поиска: белев или tf-idf
+    // Режим поиска: булев или tf-idf
 
     if (useBooleanMode)
     {
